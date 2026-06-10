@@ -1,0 +1,21 @@
+[project]
+name = "project-mlengineer"
+version = "1.0.0"
+description = "Predicción de Churn en Telecomunicaciones - Curso I ML Engineering"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pandas>=2.0",
+    "numpy>=1.26",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "groq>=0.9",
+    "python-dotenv>=1.0",
+    "joblib>=1.4",
+    "notebook>=7.0",
+    "ipykernel>=6.29",
+]
+
+[dependency-groups]
+dev = []

@@ -318,45 +318,40 @@ Project-MLEngineer/
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/tu-usuario/Project-MLEngineer.git
+git clone https://github.com/richardmk/Project-MLEngineer.git
 cd Project-MLEngineer
 
-# 2. Crear entorno virtual
-python3 -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-# .venv\Scripts\activate   # Windows
+# 2. Instalar dependencias con uv (recomendado)
+uv sync
 
-# 3. Instalar dependencias
-pip install -r requirements.txt
-
-# 4. Configurar API key
+# 3. Configurar API key
 echo "GROQ_API_KEY=tu_api_key_aqui" > .env
 ```
+
+> **uv** gestiona automáticamente el entorno virtual y las dependencias desde `pyproject.toml`.
+> Instálalo con: `curl -LsSf https://astral.sh/uv/install.sh | sh`
 
 ### Ejecución con scripts
 
 ```bash
 # Preprocesar datos
-python scripts/preprocess.py --input data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+uv run python scripts/preprocess.py --input data/WA_Fn-UseC_-Telco-Customer-Churn.csv
 
 # Entrenar modelo
-python scripts/train.py --model logistic_regression
+uv run python scripts/train.py --model logistic_regression
 
 # Generar predicciones
-python scripts/predict.py --input data/WA_Fn-UseC_-Telco-Customer-Churn.csv
+uv run python scripts/predict.py --input data/WA_Fn-UseC_-Telco-Customer-Churn.csv
 
 # Generar todos los artefactos de una vez
-python scripts/generate_artifacts.py
+uv run python scripts/generate_artifacts.py
 ```
 
 ### Ejecución de notebooks
 
 ```bash
-# Activar kernel del entorno virtual
-python -m ipykernel install --user --name=.venv --display-name "Python 3 (.venv)"
-
 # Lanzar Jupyter
-jupyter notebook notebooks/
+uv run jupyter notebook notebooks/
 ```
 
 Ejecutar en orden:

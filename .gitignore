@@ -32,8 +32,6 @@ data/*.zip
 artifacts/*.pkl
 artifacts/*.html
 
-# Virtual environments (managed separately above)
-
 # IDEs
 .vscode/
 .idea/
