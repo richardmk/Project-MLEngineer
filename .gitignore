@@ -1,0 +1,49 @@
+# Environment
+.env
+*.env
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data (archivos grandes — solo se sube estructura con .gitkeep)
+data/*.csv
+data/*.parquet
+data/*.txt
+data/*.zip
+
+# Artefactos grandes
+artifacts/*.pkl
+artifacts/*.html
+
+# Virtual environments (managed separately above)
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

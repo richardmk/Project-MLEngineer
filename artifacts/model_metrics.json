@@ -1,0 +1,26 @@
+{
+  "best_model": "Regresion Logistica",
+  "all_results": {
+    "Regresion Logistica": {
+      "Accuracy": 0.7939,
+      "Precision": 0.6243,
+      "Recall": 0.5642,
+      "F1-Score": 0.5927,
+      "AUC-ROC": 0.8345
+    },
+    "Arbol de Decision": {
+      "Accuracy": 0.7818,
+      "Precision": 0.6091,
+      "Recall": 0.5,
+      "F1-Score": 0.5492,
+      "AUC-ROC": 0.8186
+    },
+    "Random Forest": {
+      "Accuracy": 0.7818,
+      "Precision": 0.6151,
+      "Recall": 0.4786,
+      "F1-Score": 0.5383,
+      "AUC-ROC": 0.8107
+    }
+  }
+}
