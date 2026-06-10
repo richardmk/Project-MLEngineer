@@ -1,14 +1,14 @@
 {
-  "best_model": "Regresion Logistica",
+  "best_model": "Random Forest",
   "all_results": {
-    "Regresion Logistica": {
+    "Regresi\u00f3n Log\u00edstica": {
       "Accuracy": 0.7939,
       "Precision": 0.6243,
       "Recall": 0.5642,
       "F1-Score": 0.5927,
       "AUC-ROC": 0.8345
     },
-    "Arbol de Decision": {
+    "\u00c1rbol de Decisi\u00f3n": {
       "Accuracy": 0.7818,
       "Precision": 0.6091,
       "Recall": 0.5,
